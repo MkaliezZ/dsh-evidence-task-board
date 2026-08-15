@@ -1,0 +1,3 @@
+import test from 'node:test'; import assert from 'node:assert/strict'; import {applyTaskCommand,boardDigest,renderBoard} from '../src/core.js';
+test('creates and updates tasks deterministically',()=>{let b={tasks:[]}; b=applyTaskCommand(b,{type:'create',id:'1',title:'Inspect'}); b=applyTaskCommand(b,{type:'status',id:'1',status:'done'}); assert.match(renderBoard(b),/✓ 1 Inspect/); assert.equal(boardDigest(b),boardDigest(b));});
+test('rejects duplicates',()=>{const b=applyTaskCommand({tasks:[]},{type:'create',id:'1',title:'x'}); assert.throws(()=>applyTaskCommand(b,{type:'create',id:'1',title:'y'}));});

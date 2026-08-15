@@ -1,0 +1,10 @@
+{
+  "name": "@mkaliezz/dsh-task-board",
+  "version": "0.1.0",
+  "type": "module",
+  "private": false,
+  "description": "DSH plugin: dsh-task-board",
+  "license": "MIT",
+  "scripts": {"test": "node --test"},
+  "keywords": ["dsh-plugin", "deepseek-harness"]
+}
