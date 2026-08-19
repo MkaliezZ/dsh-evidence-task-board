@@ -1,4 +1,4 @@
-# dsh-task-board
+# dsh-evidence-task-board
 
 Persistent, deterministic task-state primitives for DeepSeek Harness (DSH).
 
