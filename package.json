@@ -3,7 +3,7 @@
   "version": "0.1.1",
   "type": "module",
   "private": false,
-  "description": "DSH plugin: dsh-task-board",
+  "description": "DSH plugin: dsh-evidence-task-board (npm package: @mkaliezz/dsh-task-board)",
   "license": "MIT",
   "main": "lib/src/plugin.js",
   "types": "lib/src/plugin.d.ts",
